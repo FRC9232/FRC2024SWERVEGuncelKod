@@ -1,0 +1,37 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.7,
+      "y": 6.75
+    },
+    "rotation": -120.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Top1_1"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Top1_2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Top1_3"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}
