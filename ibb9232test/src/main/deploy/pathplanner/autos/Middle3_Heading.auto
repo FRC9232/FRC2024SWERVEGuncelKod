@@ -20,25 +20,49 @@
         {
           "type": "wait",
           "data": {
+            "waitTime": 2.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "intaketoshooter"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
             "waitTime": 1.0
           }
         },
         {
           "type": "named",
           "data": {
-            "name": "intaketoshooter"
-          }
-        },
-        {
-          "type": "wait",
-          "data": {
-            "waitTime": 0.5
+            "name": "autoIntake"
           }
         },
         {
           "type": "named",
           "data": {
             "name": "shooterStop"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Middle3_Heading_1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "intaketoshooter"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.0
           }
         },
         {
@@ -48,9 +72,15 @@
           }
         },
         {
+          "type": "named",
+          "data": {
+            "name": "shooterStop"
+          }
+        },
+        {
           "type": "path",
           "data": {
-            "pathName": "Middle3_1"
+            "pathName": "Middle3_Heading_2"
           }
         },
         {
@@ -62,13 +92,7 @@
         {
           "type": "wait",
           "data": {
-            "waitTime": 0.5
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "shooterStop"
+            "waitTime": 1.0
           }
         },
         {
@@ -78,9 +102,15 @@
           }
         },
         {
+          "type": "named",
+          "data": {
+            "name": "shooterStop"
+          }
+        },
+        {
           "type": "path",
           "data": {
-            "pathName": "Middle3_2"
+            "pathName": "Middle3_Heading_3"
           }
         },
         {
@@ -92,49 +122,25 @@
         {
           "type": "wait",
           "data": {
-            "waitTime": 0.5
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "shooterStop"
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "autoIntake"
-          }
-        },
-        {
-          "type": "path",
-          "data": {
-            "pathName": "Middle3_3"
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "intaketoshooter"
-          }
-        },
-        {
-          "type": "wait",
-          "data": {
-            "waitTime": 0.5
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "shooterStop"
+            "waitTime": 1.0
           }
         },
         {
           "type": "named",
           "data": {
             "name": "intakeStop"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "shooterStop"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Middle3_Safety"
           }
         },
         {

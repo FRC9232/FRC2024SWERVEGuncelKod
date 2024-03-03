@@ -2,8 +2,8 @@
   "version": 1.0,
   "startingPose": {
     "position": {
-      "x": 0.7,
-      "y": 6.75
+      "x": 0.74,
+      "y": 6.71
     },
     "rotation": -120.0
   },
@@ -12,26 +12,110 @@
     "data": {
       "commands": [
         {
-          "type": "path",
+          "type": "named",
           "data": {
-            "pathName": "Top1_1"
+            "name": "shooter"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 2.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "intaketoshooter"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "autoIntake"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "shooterStop"
           }
         },
         {
           "type": "path",
           "data": {
-            "pathName": "Top1_2"
+            "pathName": "Top_1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "intaketoshooter"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "intakeStop"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "shooterStop"
           }
         },
         {
           "type": "path",
           "data": {
-            "pathName": "Top1_3"
+            "pathName": "Top_2"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "intaketoshooter"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "intakeStop"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "shooterStop"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "gyroReset"
           }
         }
       ]
     }
   },
-  "folder": null,
+  "folder": "Top",
   "choreoAuto": false
 }

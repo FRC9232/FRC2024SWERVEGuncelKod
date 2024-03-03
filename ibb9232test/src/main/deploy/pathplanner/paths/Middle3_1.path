@@ -20,12 +20,12 @@
         "y": 5.54
       },
       "prevControl": {
-        "x": 1.7230667672032474,
-        "y": 5.524693073483821
+        "x": 2.4500228457265414,
+        "y": 5.537382139034407
       },
       "nextControl": {
-        "x": 3.548390551849235,
-        "y": 5.556554218659836
+        "x": 2.749977154273459,
+        "y": 5.542617860965593
       },
       "isLocked": false,
       "linkedName": null
@@ -49,17 +49,11 @@
   "eventMarkers": [
     {
       "name": "New Event Marker",
-      "waypointRelativePos": 1.15,
+      "waypointRelativePos": 1.45,
       "command": {
         "type": "sequential",
         "data": {
           "commands": [
-            {
-              "type": "wait",
-              "data": {
-                "waitTime": 1.0
-              }
-            },
             {
               "type": "named",
               "data": {

@@ -1,4 +1,6 @@
 package frc.robot.subsystems;
+import edu.wpi.first.wpilibj.AnalogInput;
+import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.I2C;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.util.Color;
@@ -22,6 +24,8 @@ public class ColorSubsystem extends SubsystemBase{
     public final Color kRedTarget = new Color(0.561, 0.232, 0.114);
     public final Color kYellowTarget = new Color(0.361, 0.524, 0.113);
     public final Color kOrangeTarget = new Color(0.461, 0.401, 0.123);
+
+    private AnalogInput dp = new AnalogInput(0);
 
     public void robotInit() {
     
@@ -116,7 +120,10 @@ public class ColorSubsystem extends SubsystemBase{
       SmartDashboard.putNumber("Blue", detectedColor.blue);
       SmartDashboard.putNumber("Confidence", match.confidence);
       SmartDashboard.putNumber("Proximity", proximity);
-      SmartDashboard.putString("Detected ", colorString); 
+      SmartDashboard.putString("Detected ", colorString);
+      
+      SmartDashboard.putNumber("SharpSensor", dp.getValue()); 
+
     
     }
 

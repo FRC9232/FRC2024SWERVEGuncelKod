@@ -1,0 +1,120 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 0.72394368066646,
+        "y": 6.737082927847566
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 2.1279088638937385,
+        "y": 7.136823014738666
+      },
+      "isLocked": false,
+      "linkedName": "Top1_Start"
+    },
+    {
+      "anchor": {
+        "x": 8.055761859742248,
+        "y": 7.448815277678062
+      },
+      "prevControl": {
+        "x": 7.977763794007398,
+        "y": 7.429315761244348
+      },
+      "nextControl": {
+        "x": 8.15277610975678,
+        "y": 7.473068840181696
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 0.72394368066646,
+        "y": 6.737082927847566
+      },
+      "prevControl": {
+        "x": 3.0638856527119245,
+        "y": 7.214821080473514
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "Top1_Start"
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 0.3,
+      "rotationDegrees": 180.0,
+      "rotateFast": false
+    },
+    {
+      "waypointRelativePos": 1,
+      "rotationDegrees": 180.0,
+      "rotateFast": false
+    }
+  ],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "stop",
+      "waypointRelativePos": 1.5,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "intakeStop"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "shooter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "start",
+      "waypointRelativePos": 0.6,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "autoIntake"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 1.5,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -120.0,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "Top1_Paths",
+  "previewStartingState": {
+    "rotation": -120.0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

@@ -38,7 +38,7 @@ public class IntakeSetCommand extends Command{
                 finished = true;
                 break;
             case "autoIntake":
-                intakeSubsystem.autoIntake();
+                autoIntake();
                 finished = true;
                 break;
         }
@@ -52,6 +52,10 @@ public class IntakeSetCommand extends Command{
     }
     public void intakeToShooter(){
         intakeSubsystem.intakeToShooter();
+
+    }
+    public void autoIntake(){
+        intakeSubsystem.autoIntake();
 
     }
     @Override

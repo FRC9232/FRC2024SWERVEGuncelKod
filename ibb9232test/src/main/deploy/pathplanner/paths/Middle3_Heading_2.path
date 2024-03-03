@@ -3,69 +3,59 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 1.37,
-        "y": 5.54
+        "x": 1.36,
+        "y": 5.537862667174266
       },
       "prevControl": null,
       "nextControl": {
-        "x": 2.20099590604377,
-        "y": 5.54
+        "x": 1.4307106781186543,
+        "y": 5.60857334529292
       },
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "Middle3_Heading_Start"
     },
     {
       "anchor": {
-        "x": 2.1,
-        "y": 7.004798511021523
+        "x": 2.361903061098285,
+        "y": 6.9515776086184005
       },
       "prevControl": {
-        "x": 1.5854572045326427,
-        "y": 7.004798511021523
+        "x": 2.2911923829796303,
+        "y": 6.880866930499746
       },
       "nextControl": {
-        "x": 2.6145427954673575,
-        "y": 7.004798511021523
+        "x": 2.4326137392169396,
+        "y": 7.022288286737055
       },
       "isLocked": false,
       "linkedName": null
     },
     {
       "anchor": {
-        "x": 2.6,
-        "y": 7.004798511021523
+        "x": 1.36,
+        "y": 5.537862667174266
       },
       "prevControl": {
-        "x": 2.4708338423925063,
-        "y": 7.004798511021523
-      },
-      "nextControl": {
-        "x": 2.729166157607494,
-        "y": 7.004798511021523
-      },
-      "isLocked": false,
-      "linkedName": null
-    },
-    {
-      "anchor": {
-        "x": 1.37,
-        "y": 5.54
-      },
-      "prevControl": {
-        "x": 2.305824663590235,
-        "y": 5.54
+        "x": 1.289289321881345,
+        "y": 5.467151989055611
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "Middle3_Heading_Start"
     }
   ],
-  "rotationTargets": [],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 1.0,
+      "rotationDegrees": -130.0,
+      "rotateFast": false
+    }
+  ],
   "constraintZones": [],
   "eventMarkers": [
     {
       "name": "New Event Marker",
-      "waypointRelativePos": 2.35,
+      "waypointRelativePos": 0.85,
       "command": {
         "type": "sequential",
         "data": {
@@ -75,7 +65,35 @@
               "data": {
                 "name": "intakeStop"
               }
-            },
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "New Event Marker",
+      "waypointRelativePos": 0,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "intaketoshooter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "New Event Marker",
+      "waypointRelativePos": 1.4,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
             {
               "type": "named",
               "data": {
@@ -99,7 +117,7 @@
     "rotateFast": false
   },
   "reversed": false,
-  "folder": "Middle3_Paths",
+  "folder": "Middle3_Heading",
   "previewStartingState": {
     "rotation": 180.0,
     "velocity": 0
